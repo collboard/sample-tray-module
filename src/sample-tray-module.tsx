@@ -1,4 +1,4 @@
-import { declareModule, makeTraySimpleModule } from '@collboard/modules-sdk';
+import { declareModule, makeTraySimpleModule, React } from '@collboard/modules-sdk';
 import { contributors, description, license, name, repository, version } from '../package.json';
 
 declareModule(
@@ -14,7 +14,7 @@ declareModule(
 
         icon: {
             order: 60,
-            char: '📤' /* TODO: !!! Use icon as URL in assets */,
+            icon: '📤' /* TODO: !!! Use icon as URL in assets */,
         },
         trayDefinition: [
             {
@@ -23,7 +23,7 @@ declareModule(
                 icon: 'https://collboard.fra1.cdn.digitaloceanspaces.com/assets/18.42.0/languages/cs.svg',
                 groups: [
                     {
-                        title: 'Kraje',
+                        title: <>Kraje</>,
                         items: [
                             {
                                 //title: 'Moravskoslezsky kraj',
