@@ -33,16 +33,15 @@ declareModule(
 
         icon: {
             order: 60,
-            icon: img20220101_155315,
+            icon: img20220215_160201,
         },
         trayDefinition: [
             {
-                // TODO: !!! Mix internal and external assets + NON-image assets
-                title: 'Czechia',
-                icon: img20220101_155315,
+                title: 'Photos',
+                icon: img20220208_145707,
                 groups: [
                     {
-                        title: <>Images with</>,
+                        title: 'Just images',
                         items: [
                             { imageSrc: img20220101_155315 },
                             { imageSrc: img20220208_145707 },
@@ -52,113 +51,98 @@ declareModule(
                             { imageSrc: img20220327_122308 },
                             { imageSrc: img20220105_130407 },
                             { imageSrc: img20220215_145915 },
-                            { imageSrc: img20220223_164612 },
-                            { imageSrc: img20220319_174200 },
-                            { imageSrc: img20220322_163319 },
-                            { imageSrc: img20220328_152716 },
-                            { imageSrc: img20220207_141122 },
-                            { imageSrc: img20220215_160201 },
-                            { imageSrc: img20220319_160701 },
-                            { imageSrc: img20220319_174757 },
-                            { imageSrc: img20220326_142552 },
-                            { imageSrc: img20220328_194840 },
-                        ],
-                    },
-
-                    /*
-                    !!! Remove
-                    {
-                        title: 'Kraje 2',
-                        items: [
-                            {
-                                title: 'Moravskoslezsky kraj',
-                                imageSrc: `https://raw.githubusercontent.com/collboard/zip-support/main/assets/hello-world-icon.png`,
-                                artSrc: 'https://raw.githubusercontent.com/collboard/zip-support/main/samples/simple/sample.txt',
-                            },
-                            {
-                                title: 'Moravskoslezsky kraj',
-                                imageSrc: `https://raw.githubusercontent.com/collboard/zip-support/main/assets/hello-world-icon.png`,
-                                artSrc: 'https://raw.githubusercontent.com/collboard/zip-support/main/samples/simple/sample.txt',
-                            },
-                            {
-                                title: 'Moravskoslezsky kraj',
-                                imageSrc: `https://raw.githubusercontent.com/collboard/zip-support/main/assets/hello-world-icon.png`,
-                                artSrc: 'https://raw.githubusercontent.com/collboard/zip-support/main/samples/simple/sample.txt',
-                            },
                         ],
                     },
                     {
-                        title: 'Kraje 3',
+                        title: (
+                            <>
+                                Images + <b>titles</b>
+                            </>
+                        ),
                         items: [
-                            {
-                                title: 'Moravskoslezsky kraj',
-                                imageSrc: `https://raw.githubusercontent.com/collboard/zip-support/main/assets/hello-world-icon.png`,
-                                artSrc: 'https://raw.githubusercontent.com/collboard/zip-support/main/samples/simple/sample.txt',
-                            },
-                            {
-                                title: 'Moravskoslezsky kraj',
-                                imageSrc: `https://raw.githubusercontent.com/collboard/zip-support/main/assets/hello-world-icon.png`,
-                                artSrc: 'https://raw.githubusercontent.com/collboard/zip-support/main/samples/simple/sample.txt',
-                            },
-                            {
-                                title: 'Moravskoslezsky kraj',
-                                imageSrc: `https://raw.githubusercontent.com/collboard/zip-support/main/assets/hello-world-icon.png`,
-                                artSrc: 'https://raw.githubusercontent.com/collboard/zip-support/main/samples/simple/sample.txt',
-                            },
+                            // Note: You can add titles to tray items
+                            { title: 'image0', imageSrc: img20220223_164612 },
+                            { title: 'image1', imageSrc: img20220319_174200 },
+                            { title: 'image2', imageSrc: img20220322_163319 },
+                            { title: 'image3', imageSrc: img20220328_152716 },
+                            { title: 'image4', imageSrc: img20220207_141122 },
+                            { title: 'image5', imageSrc: img20220215_160201 },
+                            { title: 'image6', imageSrc: img20220319_160701 },
+                            { title: 'image7', imageSrc: img20220319_174757 },
+                            { title: 'image8', imageSrc: img20220326_142552 },
+                            { title: 'image9', imageSrc: img20220328_194840 },
                         ],
                     },
-                    */
                 ],
             },
-
-            /*
-            !!! Delete and make new group
             {
-                title: 'Slovakia',
-                icon: 'https://collboard.fra1.cdn.digitaloceanspaces.com/assets/18.42.0/languages/sk.svg',
+                title: { en: 'Photos', cs: 'Fotky' /* <- Note: You can make inline translations inside titles */ },
+                icon: img20220215_160201,
                 groups: [
                     {
-                        title: 'Kraje',
+                        title: (
+                            <>
+                                Images with <b>better quality</b>
+                            </>
+                            // Note: Tray item can be anything importable by Collboard.
+                            //       It can be internal asset or external link.
+                            //       For example this is using https://github.com/hejny/heic-support
+                        ),
                         items: [
                             {
-                                title: 'Moravskoslezsky kraj',
-                                imageSrc: `https://raw.githubusercontent.com/collboard/zip-support/main/assets/hello-world-icon.png`,
-                                artSrc: 'https://raw.githubusercontent.com/collboard/zip-support/main/samples/simple/sample.txt',
+                                title: 'image0',
+                                imageSrc: img20220223_164612,
+                                artSrc: 'https://github.com/hejny/heic-support/raw/main/samples/20220223_164612.heic',
                             },
                             {
-                                title: 'Moravskoslezsky kraj',
-                                imageSrc: `https://raw.githubusercontent.com/collboard/zip-support/main/assets/hello-world-icon.png`,
-                                artSrc: 'https://raw.githubusercontent.com/collboard/zip-support/main/samples/simple/sample.txt',
+                                title: 'image1',
+                                imageSrc: img20220319_174200,
+                                artSrc: 'https://github.com/hejny/heic-support/raw/main/samples/20220319_174200.heic',
                             },
                             {
-                                title: 'Moravskoslezsky kraj',
-                                imageSrc: `https://raw.githubusercontent.com/collboard/zip-support/main/assets/hello-world-icon.png`,
-                                artSrc: 'https://raw.githubusercontent.com/collboard/zip-support/main/samples/simple/sample.txt',
-                            },
-                        ],
-                    },
-                    {
-                        title: 'Kraje 2',
-                        items: [
-                            {
-                                title: 'Moravskoslezsky kraj',
-                                imageSrc: `https://raw.githubusercontent.com/collboard/zip-support/main/assets/hello-world-icon.png`,
-                                artSrc: 'https://raw.githubusercontent.com/collboard/zip-support/main/samples/simple/sample.txt',
+                                title: 'image2',
+                                imageSrc: img20220322_163319,
+                                artSrc: 'https://github.com/hejny/heic-support/raw/main/samples/20220322_163319.heic',
                             },
                             {
-                                title: 'Moravskoslezsky kraj',
-                                imageSrc: `https://raw.githubusercontent.com/collboard/zip-support/main/assets/hello-world-icon.png`,
-                                artSrc: 'https://raw.githubusercontent.com/collboard/zip-support/main/samples/simple/sample.txt',
+                                title: 'image3',
+                                imageSrc: img20220328_152716,
+                                artSrc: 'https://github.com/hejny/heic-support/raw/main/samples/20220328_152716.heic',
                             },
                             {
-                                title: 'Moravskoslezsky kraj',
-                                imageSrc: `https://raw.githubusercontent.com/collboard/zip-support/main/assets/hello-world-icon.png`,
-                                artSrc: 'https://raw.githubusercontent.com/collboard/zip-support/main/samples/simple/sample.txt',
+                                title: 'image4',
+                                imageSrc: img20220207_141122,
+                                artSrc: 'https://github.com/hejny/heic-support/raw/main/samples/20220207_141122.heic',
+                            },
+                            {
+                                title: 'image5',
+                                imageSrc: img20220215_160201,
+                                artSrc: 'https://github.com/hejny/heic-support/raw/main/samples/20220215_160201.heic',
+                            },
+                            {
+                                title: 'image6',
+                                imageSrc: img20220319_160701,
+                                artSrc: 'https://github.com/hejny/heic-support/raw/main/samples/20220319_160701.heic',
+                            },
+                            {
+                                title: 'image7',
+                                imageSrc: img20220319_174757,
+                                artSrc: 'https://github.com/hejny/heic-support/raw/main/samples/20220319_174757.heic',
+                            },
+                            {
+                                title: 'image8',
+                                imageSrc: img20220326_142552,
+                                artSrc: 'https://github.com/hejny/heic-support/raw/main/samples/20220326_142552.heic',
+                            },
+                            {
+                                title: 'image9',
+                                imageSrc: img20220328_194840,
+                                artSrc: 'https://github.com/hejny/heic-support/raw/main/samples/20220328_194840.heic',
                             },
                         ],
                     },
                 ],
-            },*/
+            },
         ],
     }),
 );
