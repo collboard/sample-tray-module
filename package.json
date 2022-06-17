@@ -1,6 +1,6 @@
 {
     "name": "@collboard-templates/sample-tray-module",
-    "version": "0.3.82",
+    "version": "0.3.83",
     "description": "Sample of tray module for Collboard.com",
     "license": "SEE LICENSE IN LICENSE",
     "contributors": [
