@@ -1,6 +1,6 @@
 {
     "name": "@collboard-templates/sample-tray-module",
-    "version": "0.3.151",
+    "version": "0.3.152",
     "description": "Sample of tray module for Collboard.com",
     "license": "SEE LICENSE IN LICENSE",
     "contributors": [
@@ -21,7 +21,7 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "@collboard/modules-sdk": "28.2.0",
+        "@collboard/modules-sdk": "28.3.0",
         "tslint": "6.1.3"
     }
 }
