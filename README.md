@@ -18,6 +18,7 @@ Sample of tray module for [Collboard.com](https://collboard.com/) created via [@
 [![test](https://github.com/collboard/sample-tray-module/actions/workflows/test.yml/badge.svg)](https://github.com/collboard/sample-tray-module/actions/workflows/test.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/collboard/sample-tray-module/badge.svg)](https://snyk.io/test/github/collboard/sample-tray-module)
 [![Issues](https://img.shields.io/github/issues/collboard/sample-tray-module.svg?style=flat)](https://github.com/collboard/sample-tray-module/issues)
+<!--[![Socket](https://socket.dev/api/badge/npm/package/@collboard-templates/sample-tray-module)](https://socket.dev/npm/package/@collboard-templates/sample-tray-module)-->
 
 <!--/Badges-->
 
